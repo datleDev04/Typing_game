@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* .none{
+    display: none;
+} */
+
+body{
+    background-color: #2196f3;
+}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgs/intro.jpg');
+    background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.intro>h1{
+    /* text-shadow: 7px 7px 8px rgba(0, 0, 0, .5); */
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.intro>span > button:hover{
+    transform: scale(1.3);
+    transition: .3s;
+    color: red;
+}
+
+.circle{
+    margin: 0 auto;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    overflow:hidden;
+}
+
+.semi_circle{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+}
+
+.semi_circle:nth-child(1){
+    background-color: red;
+    z-index: 2;
+}
+.semi_circle:nth-child(2){
+    background-color: red;
+    z-index: 3;
+}
+.semi_circle:nth-child(3){
+    background-color: white;
+    z-index: 4;
+    display: none;
+}
+
+.inner_circle{
+    width: 485px;
+    height: 485px;
+    background-color: #2196f3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 5;
+    position: absolute;
+    /* display: none; */
+}
+
+.text_wrapper{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text_wrapper>h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+
+
+/* #home:hover .semi_circle:nth-child(1){
+    transform: rotate(180deg);
+    transition: 1s linear;
+}
+#home:hover .semi_circle:nth-child(2){
+    transform: rotate(360deg);
+    transition: 2s linear;
+}
+#home:hover .semi_circle:nth-child(3){
+    opacity: 0;
+    transition: 0s 1s;
+} */
